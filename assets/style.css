@@ -32,7 +32,6 @@ footer p{
 
 .cartao{
     margin: 1rem 1rem; /*espaço externo 1rem p/ todos os lados*/
-    
     height: 20rem; /*altura elemento 20rem*/
     flex-grow: 1; /*cresce os elementos de maneira uniforme*/ 
     flex-basis: calc(33% - 6rem); /*divide o espaço p/ 3 elementos*/
@@ -61,4 +60,8 @@ footer p{
     margin: 0.6rem;  /*margem externa de 0.6 raiz*/
     border-radius: 0.6rem;  /*borda arredondada de 0.6 raiz*/
     font-size: 1vw; /*tamanho letra do titulo, 1% largura raiz*/
+}
+
+.cartao:hover .cartao__conteudo{
+    transform: rotateY('180deg');
 }
