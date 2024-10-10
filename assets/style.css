@@ -11,7 +11,6 @@ body{
     font-family:"Bai Jamjuree" ;
 }
 
-/*aula 3 Alura*/
 #container{
     display: flex; /*transforma em elemento flexível*/
 }
@@ -33,39 +32,41 @@ body{
 }
 
 .cartao__conteudo h3{ /*estilo do titulo do cartao*/
-    color: var(--text-color);
+    color: var(--text-color);/*COR DO TEXTO*/
     border: 1px solid var(--text-color);
+    /*BORDA:1PIXEL TIPO SÓLIDA COR TIRADA DA VARIAVEL DE TEXTO*/
     text-align: left; /*texto alinhado à esquerda*/
     padding: 0.5rem;  /*espaço interno de 0.5 raiz*/
     position: absolute; /*posiciona o titulo em relação ao "pai"*/
     margin: 0.6rem;  /*margem externa de 0.6 raiz*/
     border-radius: 0.6rem;  /*borda arredondada de 0.6 raiz*/
     font-size: 1vw; /*tamanho letra do titulo, 1% largura raiz*/
-    backface-visibility: hidden; /*visibilidade do verso do elemento: oculto*/
+    backface-visibility: hidden; 
+    /*visibilidade do verso do elemento: oculto*/
 }
 .cartao__conteudo p{
-    margin-top: 1rem;
-    padding: 2rem;
-    margin-top: 4rem;
+    margin-top: 1rem; /*MARGEM EXTERNA SUPERIOR DE 1REM*/
+    padding: 2rem; /*ESPAÇO INTERNO DO ELEMENTO DE 2REM*/
+    margin-top: 4rem; /*MARGEM EXTERNA SUPERIOR DE 1REM*/
 }
 
 .cartao__conteudo__pergunta p{
     color: var(--text-color);
-    font-weight: 500;
+    font-weight: 500; /*ESPESSURA DA LETRA, 500*/
 }
 .cartao__conteudo__resposta p{
     color: var(--card-back-color);
-    font-weight: 700;
+    font-weight: 700; /*ESPESSURA DA LETRA, 700*/
 }
-.cartao:hover .cartao__conteudo{
+.cartao:hover .cartao__conteudo{ 
+    /*PSEUDOCLASSE HOVER, IDENTIFICA O ARRASTO DO MOUSE*/
     transform: rotateY(180deg); 
     /* Transformando a rotação no eixoY em 180graus*/
-    
 }
 
 .cartao__conteudo__pergunta, 
 .cartao__conteudo__resposta{
-    backface-visibility: hidden;
+    backface-visibility: hidden; /*ELEMENTOS FICAM OCULTOS*/
     position: absolute;
     height: 100%;
     width: 100%;
@@ -91,6 +92,5 @@ footer {
 footer p{
     text-align: center;
     font-size: 0.6rem;
-    
     margin-top: 0.5rem;
 }
